@@ -1,0 +1,12 @@
+{
+  "name": "billy-site-tools",
+  "version": "1.0.0",
+  "description": "Image conversion tools for billy site",
+  "scripts": {
+    "convert-images": "node convert-images.js",
+    "build": "echo 'Static site - no build required'"
+  },
+  "dependencies": {
+    "sharp": "^0.32.0"
+  }
+}
