@@ -4,37 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bakersfield Real Estate Photography | William Dean Photography – Clean, Fast, Compliant</title>
-  <meta name="description" content="Real estate photographer in Bakersfield & Kern County delivering clean, fast, MLS-compliant listing photos, twilight edits, and AI marketing visuals for serious agents." />
-  <meta name="keywords" content="William Dean Photography, Bakersfield real estate photographer, Kern County listing photos, MLS compliant photography, twilight edits, AI staging, AI walk-through video, real estate marketing, Bakersfield CA photography, residential listing photos" />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Bakersfield Real Estate Photography | William Dean Photography" />
-  <meta property="og:description" content="Technically clean, emotionally dialed listing visuals for Bakersfield agents who want consistency—not random shoots." />
-  <meta property="og:type" content="website" />
-    <meta property="og:image" content="william_dean_logo.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="William Dean Photography | Bakersfield Real Estate Photography" />
-    <meta name="twitter:description" content="Fast turnaround. Zero friction. Market-ready listing visuals for Bakersfield & Kern County agents." />
-    <meta name="twitter:image" content="william_dean_logo.png" />
-    <link rel="canonical" href="/" />
-    <link rel="preload" href="william_dean_logo.png" as="image" />
-    <link rel="icon" href="william_dean_logo.png" type="image/png" />
-    <link rel="apple-touch-icon" href="william_dean_logo.png" />
+  <meta name="description" content="William Dean Photography provides premium real estate photography in Bakersfield and Kern County. Clean, fast, MLS-compliant listing photos, twilight edits, and drone services for real estate agents." />
+  <meta name="keywords" content="Real Estate Photography Bakersfield, Kern County Real Estate Photographer, Bakersfield Listing Photos, MLS Compliant Photography, Twilight Real Estate Photography, Drone Photography Bakersfield, William Dean Photography" />
   <meta name="geo.region" content="US-CA" />
   <meta name="geo.placename" content="Bakersfield" />
-  <meta name="geo.position" content="35.3733,-119.0187" />
+  <meta name="geo.position" content="35.3733;-119.0187" />
   <meta name="ICBM" content="35.3733, -119.0187" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "ProfessionalService"],
+    "@type": "LocalBusiness",
     "name": "William Dean Photography",
     "image": "https://williamdeanphotography.com/william_dean_logo.png",
-    "description": "Real estate photographer in Bakersfield & Kern County delivering clean, fast, MLS-compliant listing photos, twilight edits, and AI-enhanced marketing visuals.",
+    "@id": "https://williamdeanphotography.com/",
     "url": "https://williamdeanphotography.com/",
     "telephone": "+1-865-364-0099",
-    "email": "williamdeanrealphotography@gmail.com",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Downtown Bakersfield",
       "addressLocality": "Bakersfield",
       "addressRegion": "CA",
       "postalCode": "93301",
@@ -45,14 +33,30 @@
       "latitude": 35.3733,
       "longitude": -119.0187
     },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    "sameAs": [
+      "https://instagram.com/williamdeanrealphotography"
+    ],
     "areaServed": [
       { "@type": "City", "name": "Bakersfield" },
+      { "@type": "City", "name": "Rosedale" },
+      { "@type": "City", "name": "Oildale" },
+      { "@type": "City", "name": "Shafter" },
+      { "@type": "City", "name": "Wasco" },
+      { "@type": "City", "name": "Delano" },
       { "@type": "AdministrativeArea", "name": "Kern County" }
-    ],
-    "serviceType": [
-      "Residential Real Estate Photography",
-      "Commercial Real Estate Photography",
-      "MLS-Compliant Listing Photography"
     ]
   }
   </script>
@@ -110,13 +114,13 @@
       box-shadow: 0 4px 30px rgba(0,0,0,0.4);
     }
     .nav{
-      display:flex;justify-content:space-between;align-items:center;padding:12px 0; gap: 40px
+      display:flex;justify-content:center;align-items:center;padding:12px 0; gap: 60px
     }
-    .brand { flex: 1; display: flex; align-items: center; justify-content: flex-start; min-width: 280px; }
+    .brand { flex: 0 0 auto; display: flex; align-items: center; justify-content: flex-start; }
     .brand img{height:140px;width:auto;display:block;filter:drop-shadow(0 4px 15px rgba(0,0,0,0.5));transition:all .4s cubic-bezier(0.4, 0, 0.2, 1)}
     .brand img:hover{transform:scale(1.06)}
-    .header-center{flex: 0 0 auto; display:flex;align-items:center;gap:20px;justify-content:center; text-align: center}
-    .header-right{flex: 1; display:flex;justify-content:flex-end; align-items:center; gap:12px; min-width: 250px}
+    .header-center{flex: 0 0 auto; display:flex;align-items:center;gap:30px;justify-content:center; text-align: center}
+    .header-right{flex: 0 0 auto; display:none;justify-content:flex-end; align-items:center; gap:12px;}
     .chat-trigger {
       display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--muted); font-size: 0.9rem; transition: 0.3s;
     }
@@ -199,13 +203,113 @@
     }
     .proof .num{font-size:1.8rem;font-weight:800;color:var(--accent)}
     .gallery{
-      display:grid;grid-template-columns:repeat(4,1fr);gap:12px
+      display:grid;grid-template-columns:repeat(3,1fr);gap:15px; margin-bottom: 40px;
+    }
+    .gallery picture {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .gallery picture.reveal {
+      opacity: 1;
+      transform: translateY(0);
     }
     .gallery img{
-      width:100%;height:220px;object-fit:cover;border-radius:14px;border:1px solid var(--line);
-      transition:.3s ease;box-shadow:var(--shadow)
+      width:100%;height:300px;object-fit:cover;border-radius:14px;border:1px solid var(--line);
+      transition:.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);box-shadow:var(--shadow);
+      cursor: pointer;
     }
-    .gallery img:hover{transform:translateY(-4px) scale(1.01)}
+    .gallery img:hover{transform:translateY(-8px) scale(1.02); border-color: var(--accent);}
+
+    /* Twilight Comparison Slider */
+    .twilight-comparison {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      margin: 40px auto;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--accent);
+      box-shadow: var(--shadow);
+      aspect-ratio: 16/9;
+    }
+    .twilight-comparison img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+    .comparison-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      border-right: 2px solid var(--accent);
+      z-index: 2;
+    }
+    .comparison-overlay img {
+      width: 200%; /* Scale to fit since it's in a 50% width container */
+      max-width: none;
+    }
+    .comparison-slider {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background: var(--accent);
+      transform: translateX(-50%);
+      z-index: 3;
+      pointer-events: none;
+    }
+    .slider-handle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      height: 44px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #111;
+      font-weight: bold;
+      box-shadow: 0 0 20px rgba(215,178,109,0.5);
+      z-index: 4;
+    }
+    .twilight-input {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: ew-resize;
+      z-index: 5;
+    }
+    .twilight-label {
+      position: absolute;
+      bottom: 20px;
+      padding: 8px 16px;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(5px);
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #fff;
+      z-index: 6;
+      pointer-events: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .label-before { left: 20px; }
+    .label-after { right: 20px; border-color: var(--accent); color: var(--accent); }
     .process{
       display:grid;grid-template-columns:repeat(3,1fr);gap:16px
     }
@@ -229,6 +333,8 @@
     footer{padding:32px 0;color:var(--muted);border-top:1px solid var(--line);margin-top:52px}
     @media (max-width:980px){
       .gallery{grid-template-columns:repeat(2,1fr)}
+      .twilight-comparison { aspect-ratio: 4/3; }
+      .comparison-overlay img { width: 200%; }
       .proof,.process,.bio-grid{grid-template-columns:1fr}
       .hero{min-height:72vh}
       .nav{flex-direction:column; gap:15px; text-align:center}
@@ -239,7 +345,11 @@
     }
     @media (max-width:560px){
       .gallery{grid-template-columns:1fr}
-      .gallery img{height:auto; aspect-ratio:3/2}
+      .gallery img{height:250px;}
+      .twilight-comparison { aspect-ratio: 1/1; }
+      .twilight-label { font-size: 0.7rem; padding: 6px 10px; bottom: 10px; }
+      .label-before { left: 10px; }
+      .label-after { right: 10px; }
       .nav-phone{font-size:1.2rem}
       .btn-primary{padding:12px 20px; font-size:1rem}
       .floating-ctas{right:15px; bottom:20px; gap:10px}
@@ -606,28 +716,91 @@
       <p class="section-sub">Clean HDR images, sharp verticals, balanced natural/interior light, and listing visuals that are both MLS-safe and social-media effective.</p>
       <div class="gallery">
         <picture>
-          <img src="kitchen.jpg" alt="Modern kitchen with island and black scalloped tile backsplash" loading="lazy">
+          <source srcset="1.webp" type="image/webp">
+          <img src="1.jpg" alt="Bakersfield Real Estate Photography - Professional Interior" loading="lazy">
         </picture>
         <picture>
-          <img src="blue-house.jpg" alt="Blue house exterior with solar panels and American flag" loading="lazy">
+          <source srcset="2.webp" type="image/webp">
+          <img src="2.jpg" alt="Modern Bakersfield Home Listing Photo" loading="lazy">
         </picture>
         <picture>
-          <img src="bedroom.jpg" alt="Master bedroom with wood floors, black curtains, and cat tree" loading="lazy">
+          <source srcset="3.webp" type="image/webp">
+          <img src="3.jpg" alt="Clean and Bright Real Estate Photography Kern County" loading="lazy">
         </picture>
         <picture>
-          <img src="bathroom.jpg" alt="Luxury bathroom with in-floor tub and skylight" loading="lazy">
+          <source srcset="4.avif" type="image/avif">
+          <img src="4.avif" alt="Luxury Bakersfield Property Photography" loading="lazy">
         </picture>
         <picture>
-          <source srcset="twlight2.avif" type="image/avif">
-          <source srcset="twlight2.webp" type="image/webp">
-          <img src="twlight2.jpg" alt="Twilight shot of the house exterior with white garage" loading="lazy">
+          <img src="5.jpg" alt="Professional Real Estate Kitchen Photography Bakersfield" loading="lazy">
         </picture>
         <picture>
-          <source srcset="ec8cc0e9-74b8-49ff-a569-f397f836a75d.avif" type="image/avif">
-          <source srcset="ec8cc0e9-74b8-49ff-a569-f397f836a75d.webp" type="image/webp">
-          <img src="ec8cc0e9-74b8-49ff-a569-f397f836a75d.jpg" alt="Twilight shot of the grey house exterior" loading="lazy">
+          <img src="6.jpg" alt="High-End Residential Listing Photo Kern County" loading="lazy">
         </picture>
       </div>
+
+      <div class="twilight-section" style="margin-top: 60px;">
+        <h3 style="text-align: center; font-size: 2rem; margin-bottom: 10px; color: var(--accent);">Twilight Transformation</h3>
+        <p style="text-align: center; color: var(--muted); margin-bottom: 30px;">Slide to see the difference between standard and twilight editing.</p>
+        
+        <div class="twilight-comparison">
+          <!-- After (T2) -->
+          <picture>
+            <source srcset="t2.webp" type="image/webp">
+            <img src="t2.jpg" alt="Twilight Real Estate After Edit">
+          </picture>
+          
+          <!-- Before (T1) -->
+          <div class="comparison-overlay" id="twilight-overlay">
+            <picture>
+              <source srcset="t1.webp" type="image/webp">
+              <img src="t1.jpg" alt="Twilight Real Estate Before Edit">
+            </picture>
+          </div>
+          
+          <div class="comparison-slider" id="twilight-slider">
+            <div class="slider-handle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+          </div>
+          
+          <input type="range" min="0" max="100" value="50" class="twilight-input" id="twilight-range">
+          
+          <div class="twilight-label label-before">Daylight</div>
+          <div class="twilight-label label-after">Twilight Edit</div>
+        </div>
+      </div>
+
+      <script>
+        const range = document.getElementById('twilight-range');
+        const overlay = document.getElementById('twilight-overlay');
+        const slider = document.getElementById('twilight-slider');
+
+        range.addEventListener('input', (e) => {
+          const value = e.target.value;
+          overlay.style.width = `${value}%`;
+          slider.style.left = `${value}%`;
+        });
+
+        // Scroll Reveal for Gallery
+        const observerOptions = {
+          threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                entry.target.classList.add('reveal');
+              }, index * 100);
+              observer.unobserve(entry.target);
+            }
+          });
+        }, observerOptions);
+
+        document.querySelectorAll('.gallery picture').forEach(pic => observer.observe(pic));
+      </script>
 
       <div class="quotes">
         <div class="quote-card">
@@ -670,20 +843,6 @@
         </p>
       </div>
       
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 24px; margin-top: 40px;">
-        <picture>
-          
-          <source srcset="twilight1.avif" type="image/avif">
-          <source srcset="twilight1.webp" type="image/webp">
-          <img src="twilight1.jpg" alt="Bakersfield real estate twilight photography" style="width: 100%; height: 100%; aspect-ratio: 16/10; object-fit: cover; border-radius: 18px; border: 1px solid var(--line); display: block;">
-        </picture>
-        <picture>
-          
-          <source srcset="twlight2.avif" type="image/avif">
-          <source srcset="twlight2.webp" type="image/webp">
-          <img src="twlight2.jpg" alt="Kern County architecture twilight edit" style="width: 100%; height: 100%; aspect-ratio: 16/10; object-fit: cover; border-radius: 18px; border: 1px solid var(--line); display: block;">
-        </picture>
-      </div>
     </div>
   </section>
 
@@ -719,8 +878,16 @@
           <p>Yes. Every set is delivered in MLS-compliant formats, with clean, realistic edits that avoid oversaturation, distortion, and misleading representations.</p>
         </div>
         <div class="faq-item">
-          <h3>Do you offer twilight or AI-enhanced listing photos?</h3>
-          <p>Yes. I offer twilight edits, twilight-style marketing images, AI staging, and AI walk-through videos designed for social media and branding while staying grounded in the real property.</p>
+          <h3>How much does real estate photography cost in Bakersfield?</h3>
+          <p>Most residential listing shoots in Bakersfield and Kern County range between $175 and $350, depending on the size of the property and specific services like drone or twilight add-ons.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Why is professional photography important for real estate listings?</h3>
+          <p>High-quality visuals increase online engagement, help listings sell faster, and justify higher asking prices by creating a strong first impression on platforms like Zillow and the MLS.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Are you Part 107 certified for drone photography?</h3>
+          <p>Yes, I am FAA Part 107 certified, which is required for any commercial drone operation. This ensures your aerial listing photos are legal, safe, and professional.</p>
         </div>
       </div>
     </div>

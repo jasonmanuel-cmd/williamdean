@@ -1,5 +1,4 @@
 User-agent: *
 Disallow:
 
-# Replace with the full URL to your sitemap
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://williamdeanphotography.com/sitemap.xml
