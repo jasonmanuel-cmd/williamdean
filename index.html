@@ -552,27 +552,35 @@
         pointer-events: all;     /* always clickable */
       }
       #chat-toggle {
-        background: var(--accent);
-        color: #0a0b0e;
-        border: none;
-        width: 62px;
-        height: 62px;
-        border-radius: 50%;
+        background: linear-gradient(135deg, rgba(215,178,109,0.15), rgba(215,178,109,0.08));
+        color: var(--accent);
+        border: 1px solid rgba(215,178,109,0.55);
+        padding: 11px 18px 11px 16px;
+        border-radius: 999px;
         cursor: pointer;
-        font-size: 24px;
-        box-shadow: 0 4px 24px rgba(215,178,109,0.55), 0 0 0 0 rgba(215,178,109,0.4);
+        font-size: 0.88rem;
+        font-weight: 500;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: 0.2px;
+        box-shadow: 0 4px 20px rgba(215,178,109,0.25);
         display: flex;
         align-items: center;
-        justify-content: center;
-        transition: transform 0.2s, box-shadow 0.2s;
-        animation: chatPulse 2.5s infinite;
+        gap: 7px;
+        white-space: nowrap;
+        backdrop-filter: blur(10px);
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        animation: chatGlow 2s ease-out 3;
       }
-      @keyframes chatPulse {
-        0%   { box-shadow: 0 4px 24px rgba(215,178,109,0.55), 0 0 0 0   rgba(215,178,109,0.45); }
-        60%  { box-shadow: 0 4px 24px rgba(215,178,109,0.55), 0 0 0 14px rgba(215,178,109,0); }
-        100% { box-shadow: 0 4px 24px rgba(215,178,109,0.55), 0 0 0 0   rgba(215,178,109,0); }
+      @keyframes chatGlow {
+        0%   { box-shadow: 0 4px 20px rgba(215,178,109,0.25), 0 0 0 0 rgba(215,178,109,0.4); }
+        50%  { box-shadow: 0 4px 24px rgba(215,178,109,0.45), 0 0 0 10px rgba(215,178,109,0); }
+        100% { box-shadow: 0 4px 20px rgba(215,178,109,0.25), 0 0 0 0 rgba(215,178,109,0); }
       }
-      #chat-toggle:hover { transform: scale(1.1); animation: none; box-shadow: 0 8px 32px rgba(215,178,109,0.7); }
+      #chat-toggle:hover {
+        transform: scale(1.04);
+        background: linear-gradient(135deg, rgba(215,178,109,0.22), rgba(215,178,109,0.12));
+        box-shadow: 0 6px 28px rgba(215,178,109,0.38);
+      }
       #chat-box {
         display: none;
         flex-direction: column;
@@ -1190,7 +1198,12 @@
 
     <!-- AI Chat Widget -->
     <div id="ai-chat-container">
-      <button id="chat-toggle" title="Chat with us">&#x1F4AC;</button>
+      <button id="chat-toggle" title="Ask about this page" aria-label="Ask the AI about this page">
+        Ask about this
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="flex-shrink:0;opacity:0.9">
+          <path d="M12 2l1.6 4.8L18.4 8l-3.6 3.2 1.2 5-4-2.4-4 2.4 1.2-5L5.6 8l4.8-1.2L12 2z" fill="currentColor"/>
+        </svg>
+      </button>
       <div id="chat-box">
         <div class="chat-header">
           <div class="chat-avatar">&#x1F4F7;</div>
